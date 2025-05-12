@@ -24,10 +24,9 @@ This pipeline isolates all b₀ images from a 4D DWI dataset, exports the corres
 1. Navigate to [Brainlife.io](https://brainlife.io) and locate the **app-dwi2b0** application.
 2. In the **Execute** tab, upload:
 
-   * 4D DWI file (`.nii.gz` or `.mif`)
-   * Associated `.bval` and `.bvec` files
+   * DWI file (`.nii.gz` or `.mif`)
    * Optionally, a **config.json** to override default settings
-3. Launch the job. Outputs will include extracted b₀ volumes, gradient files, and an ANTs-derived template if enabled.
+3. Launch the job. Outputs will include extracted b₀ volumes, and average b0 or an ANTs-derived template if enabled.
 
 ### Running on Brainlife.io via CLI
 
@@ -79,7 +78,7 @@ Replace `<...>` with your project and dataset identifiers.
 
 * **b0/** — directory containing:
 
-  * `dwi.nii.gz` — extracted b₀ series or ANTs-derived template
+  * `dwi.nii.gz` — average b₀ or ANTs-derived template
 * **dwi/** — directory containing:
 
   * `dwi.nii.gz` — raw extracted b₀ volumes
