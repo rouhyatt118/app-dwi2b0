@@ -38,6 +38,6 @@ fi
 mkdir b0_series
 
 mv ${dwi_b0s} b0_series/dwi.nii.gz
-mv ${dwi_b0s_bvec} b0_series/dwi.bvals
+mv ${dwi_b0s_bvec} b0_series/dwi.bvecs
 mv ${dwi_b0s_bval} b0_series/dwi.bvals
 
