@@ -37,9 +37,9 @@ else
   mv b0_avg.nii.gz b0/dwi.nii.gz
 fi
 
-mkdir dwi
+mkdir b0_series
 
-mv ${dwi_b0s} dwi/dwi.nii.gz
-mv ${dwi_b0s_bvec} dwi/dwi.bvals
-mv ${dwi_b0s_bval} dwi/dwi.bvals
+mv ${dwi_b0s} b0_series/dwi.nii.gz
+mv ${dwi_b0s_bvec} b0_series/dwi.bvals
+mv ${dwi_b0s_bval} b0_series/dwi.bvals
 
