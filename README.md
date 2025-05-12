@@ -97,9 +97,9 @@ Replace `<...>` with your project and dataset identifiers.
 
 If using the ANTs template component, please cite:
 
-> Avants BB, Tustison NJ, Song G, Cook PA, Klein A, Gee JC. A reproducible evaluation of ANTs similarity metric performance in brain image registration. *NeuroImage*. 2011;54(3):2033–2044. PMID: 20851191.
-> Tournier et al., MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation, NeuroImage, 2019.
-> Hayashi, S., Caron, B.A., et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. Nat Methods 
+- Avants BB, Tustison NJ, Song G, Cook PA, Klein A, Gee JC. A reproducible evaluation of ANTs similarity metric performance in brain image registration. *NeuroImage*. 2011;54(3):2033–2044. PMID: 20851191.
+- Tournier et al., MRtrix3: A fast, flexible and open software framework for medical image processing and visualisation, NeuroImage, 2019.
+- Hayashi, S., Caron, B.A., et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. Nat Methods 
 
 ---
 
