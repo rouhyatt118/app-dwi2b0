@@ -60,7 +60,7 @@ Replace `<...>` with your project and dataset identifiers.
 
    ```json
    {
-     "dwi":      "sub-01_dwi.mif",
+     "dwi":      "sub-01_dwi.nii.gz",
      "bvals":    "sub-01.bval",
      "bvecs":    "sub-01.bvec",
      "template": true
