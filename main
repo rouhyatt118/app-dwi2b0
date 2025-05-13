@@ -27,9 +27,9 @@ mkdir b0
 if [ "${template}" == "true" ]; then
   singularity exec -e docker://brainlife/mrtrix3:3.0.3 \
     bash ${split_b0s} $dwi_b0s b0
-singularity exec -e docker://antsx/ants:v2.6.0 \
+singularity exec -e docker://brainlife/ants:2.3.1 \
   antsMultivariateTemplateConstruction2.sh -h
-singularity exec -e docker://antsx/ants:v2.6.0 \
+singularity exec -e docker://brainlife/ants:2.3.1 \
     bash ${merge_b0s} Template_b  b0_0*.nii.gz
   mv Template_btemplate0.nii.gz b0/dwi.nii.gz
 else
