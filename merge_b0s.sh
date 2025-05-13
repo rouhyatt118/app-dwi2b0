@@ -39,7 +39,7 @@ mkdir -p "${OUTPUT_PREFIX}_rigid_template"
 
 # Run ANTs multivariate template construction (rigid only, serial)
 echo "antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -i ${ITERATIONS}  -k 1  -m CC  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}""
-
+antsMultivariateTemplateConstruction2.sh -h
 antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -i ${ITERATIONS}  -k 1  -m CC  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}"
 
 # Output:
