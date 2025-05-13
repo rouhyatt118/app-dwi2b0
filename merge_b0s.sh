@@ -32,16 +32,15 @@ INPUT_IMAGES=("$@")
 # Rigid‐only template construction parameters
 DIMENSION=3                       # 3D images
 ITERATIONS=1                      # template‐building iterations
-GRADIENT_STEP=0.2                 # update step size
 CPU_CORES=$(nproc)                # number of local cores
 
 # Create output directory
 mkdir -p "${OUTPUT_PREFIX}_rigid_template"
 
 # Run ANTs multivariate template construction (rigid only, serial)
-echo "antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -g ${GRADIENT_STEP}  -i ${ITERATIONS}  -k 1  -m CC[4]  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}""
+echo "antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -i ${ITERATIONS}  -k 1  -m CC[4]  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}""
 
-antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -g ${GRADIENT_STEP}  -i ${ITERATIONS}  -k 1  -m CC[4]  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}"
+antsMultivariateTemplateConstruction2.sh   -d ${DIMENSION}   -c 0  -n 0  -q  100x100x0x0  -j ${CPU_CORES}  -i ${ITERATIONS}  -k 1  -m CC[4]  -t Rigid  -o "${OUTPUT_PREFIX}" "${INPUT_IMAGES[@]}"
 
 # Output:
 #   * Template0.nii.gz  (resulting group template)
