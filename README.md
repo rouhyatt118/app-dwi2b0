@@ -79,7 +79,7 @@ Replace `<...>` with your project and dataset identifiers.
 * **b0/** — directory containing:
 
   * `dwi.nii.gz` — average b₀ or ANTs-derived template
-* **bo_series/** — directory containing:
+* **b0_series/** — directory containing:
 
   * `dwi.nii.gz` — raw extracted b₀ volumes
   * `dwi.bval`, `dwi.bvec` — corresponding gradient files
