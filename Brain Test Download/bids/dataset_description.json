@@ -1,0 +1,27 @@
+{
+    "Name": "Brain Test Download",
+    "BIDSVersion": "1.9.0",
+    "DatasetType": "raw",
+    "License": "",
+    "Authors": [],
+    "Acknowledgements": "",
+    "HowToAcknowledge": "",
+    "Funding": [],
+    "EthicsApprovals": [],
+    "ReferencesAndLinks": [],
+    "DatasetDOI": "",
+    "SourceDatasets": [],
+    "GeneratedBy": [
+        {
+            "Name": "ezBIDS",
+            "Version": "1.0.0",
+            "Description": "ezBIDS is a web-based tool for converting neuroimaging datasets to BIDS, requiring neither coding nor knowledge of the BIDS specification",
+            "CodeURL": "https://brainlife.io/ezbids/",
+            "Container": {
+                "Type": "docker",
+                "Tag": "brainlife/ezbids-handler"
+            }
+        }
+    ],
+    "HEDVersion": []
+}
